@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <style>
+        .main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <img 
+    id="profileImage"
+    height="50"
+    width="50"
+>
+<h2 id="fullName"> </h2>
+<p id="bio"></p>
+<h5 id="followerInformation"></h5>
+<p>
+    My Github Link: <a id="githublink">Github</a>
+</p>
+<a href="https://twitter.com/BishalD01148135?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-dnt="true" data-show-count="false">Follow @BishalD01148135</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<script>
+    fetch("https://api.github.com/users/bishal099")
+        .then(response => response.json())
+        .then(function(data){
+            console.log(data)
+
+            let followersCount = data['followers']
+            let followersInfo = `My Followers Number is ${followersCount} `
+            document.getElementById('profileImage').src = data['avatar_url']
+            document.getElementById('fullName').textContent = data['name']
+            document.getElementById('bio').textContent = data['bio']
+
+            document.getElementById('followerInformation').textContent = followersInfo
+            document.getElementById('githublink').href = data['html_url']
+        })
+</script>
+</body>
+</html>
