@@ -1,0 +1,24 @@
+.color {
+    width: 250px;
+    height: 20px;
+}
+
+.red {
+    background-color: #FF0000
+}
+
+.green {
+    background-color: #00FF00
+}
+
+.blue {
+    background-color: #0000FF
+}
+
+.black {
+    background-color: #000000
+}
+
+.grey {
+    background-color: #CCCCCC
+}

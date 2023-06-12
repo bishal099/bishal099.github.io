@@ -1,0 +1,122 @@
+h1, nav, footer {
+    font-family: "Century Gothic", serif;
+  }
+  
+  h2, h3, dt {
+    font-family: "Gabriola", sans-serif;
+  }
+  
+  h1 {
+    font-size: 3em;
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  footer {
+    font-size: smaller;
+  }
+  
+  #copyright {
+    font-family: serif;
+    font-style: italic;
+  }
+
+  header, footer {
+    background-color: rgb(65, 132, 42);
+    color: #eee;
+  }
+  
+  h2, nav a {
+    color: rgb(35, 102, 12);
+  }
+  
+  footer nav a {
+    color: #eee;
+  }
+
+  h1 {
+    line-height: 400%;
+    background-color: rgba(5, 72, 12, .5);
+    text-shadow: 2px 2px 10px white;
+  }
+  
+  h2, h3, dt, nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  h1, nav, #copyright {
+    text-align: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+
+  body, h1 {
+    margin: 0;
+  }
+
+  header {
+    background-image: url("/imgs/hand-grips-a-gardening-tool-to-cut-back-a-plant.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  footer {
+    padding: 10px 10% 10px 10%;
+    margin-top: 20px;
+  }
+
+  footer > div {
+    display: inline-block;
+    width: 33%;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  footer nav a {
+    display: block;
+    padding: 0;
+    text-align: left;
+  }
+
+  #heroimg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #categories {
+    margin: 40px 0;
+  }
+  
+  #categories img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  #categories section {
+    margin-bottom: 20px;
+  }
+
+
